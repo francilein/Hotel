@@ -67,7 +67,7 @@ CREATE TABLE Spa (
 )
 
 CREATE TABLE Unterhaltung (
-    ServiceID INT, -- Fremdschlüssel zur Tabelle Dienstle
+    ServiceID INT, -- Fremdschlüssel zur Tabelle Dienstleistung
     Uhrzeit VARCHAR(50) NOT NULL,
     Dauer INT CHECK (Dauer >= 0),
     Datum DATE NOT NULL,
@@ -77,7 +77,7 @@ CREATE TABLE Unterhaltung (
 )
 
 CREATE TABLE Restaurant (
-    ServiceID INT, -- Fremdschlüssel zur Tabelle Dienstle
+    ServiceID INT, -- Fremdschlüssel zur Tabelle Dienstleistung
     Sitze INT CHECK (Sitze >= 0),
     Oeffnungszeiten VARCHAR(50) NOT NULL,
     Speisen TEXT,
