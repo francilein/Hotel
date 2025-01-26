@@ -1,1 +1,0 @@
-SELECT * FROM Zimmer WHERE Verfuegbarkeit = TRUE;
